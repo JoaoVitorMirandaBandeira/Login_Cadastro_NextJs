@@ -1,3 +1,6 @@
 .login{
     @apply flex items-center justify-center h-[100vh];
 }
+.link{
+    @apply mb-2 font-medium text-violet-500
+}
