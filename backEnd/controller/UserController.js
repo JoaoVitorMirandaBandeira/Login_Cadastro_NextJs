@@ -4,12 +4,12 @@ module.exports = {
     async store(req,res){
         try{
         const {name,email,password} = req.body
-        const user = await User.findAll({
+        const user = await User.findOne({
             where:{
                 email: email
             }
         })
-        if(user.length !== 0 )throw new Error("Usuario ja existe")
+        if(user)throw new Error("Usuario ja existe")
         const newUser = await User.create({name,email,password})
         newUser.password = undefined
         return res.status(201).json(newUser)

@@ -14,15 +14,18 @@
     "@types/node": "20.3.2",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
+    "cookies-next": "^2.1.2",
     "dotenv": "^16.3.1",
     "eslint": "8.43.0",
     "eslint-config-next": "^12.0.4",
+    "jsonwebtoken": "^8.5.1",
     "next": "13.4.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.1.6"
   },
   "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.2",
     "autoprefixer": "^10.4.14",
     "concurrently": "^8.2.0",
     "postcss": "^8.4.24",
