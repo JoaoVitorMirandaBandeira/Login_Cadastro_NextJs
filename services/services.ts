@@ -17,7 +17,7 @@ function readToken(token:string){
 
 export async function registerUser(formData:FormData){
     try {
-        const require = await fetch('https://login-cadastro.onrender.com:10000/api/v1/register',{
+        const require = await fetch('https://login-cadastro.onrender.com/api/v1/register',{
             method: 'POST',
             headers: {
                 "Accept": "application/json",
